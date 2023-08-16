@@ -22,10 +22,24 @@ const SidebarLogo = () => {
         'cursor-pointer' sets cursor to a pointer when hovering over this div element
         'transition' adds a smooth transition effect when ......
          */
-        <div className="rounded-full h-14 w-14 p-4 flex items-center justify-center 
-        hover:bg-blue-300 hover:bg-opacity-10 cursor-pointer transition">
+        <div 
+            onClick={() => router.push('/')}
+            className="
+            rounded-full 
+            h-14 
+            w-14 
+            p-4 
+            flex 
+            items-center 
+            justify-center 
+            hover:bg-blue-300 
+            hover:bg-opacity-10 
+            cursor-pointer 
+            transition"
+        >
             {/* Insert Twitter icon from react-icons library */}
             <BsTwitter size={30} color="white"/>
+            
         </div>
      );
 }
