@@ -21,7 +21,10 @@ const SidebarLogo = () => {
         'hover:bg-opacity-10' reduces opacity to 10 when hovered over
         'cursor-pointer' sets cursor to a pointer when hovering over this div element
         'transition' adds a smooth transition effect when ......
-         */
+
+        router.push('/') updates browser URL to '/' without reloading page
+        */
+
         <div 
             onClick={() => router.push('/')}
             className="
@@ -35,11 +38,10 @@ const SidebarLogo = () => {
             hover:bg-blue-300 
             hover:bg-opacity-10 
             cursor-pointer 
-            transition"
-        >
+            transition">
             {/* Insert Twitter icon from react-icons library */}
             <BsTwitter size={30} color="white"/>
-            
+
         </div>
      );
 }
