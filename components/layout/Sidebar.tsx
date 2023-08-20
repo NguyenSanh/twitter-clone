@@ -58,7 +58,7 @@ const Sidebar = () => {
                         />
                     ))}
 
-                    <SidebarItem onClick = { () => {} } icon={BiLogOut} label="Logout"/>
+                    <SidebarItem onClick={() => { } } icon={BiLogOut} label="Logout" href={''}/>
                     <SidebarTweetButton />
                 </div>
             </div>
