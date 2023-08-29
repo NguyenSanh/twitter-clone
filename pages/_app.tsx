@@ -8,7 +8,7 @@ import Modal from '../components/Modal'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Modal isOpen />
+      <Modal actionLabel='ubmit' isOpen title=" Modal"/>
       <Layout>
         <Component {...pageProps} />
       </Layout>
